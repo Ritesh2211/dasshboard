@@ -42,41 +42,41 @@ const SideBar: React.FC = () => {
       <List>
         {/* Logo Section */}
         <ListItemButton>
-          <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#FFFFFF', fontSize: 15,justifyContent:'center'}}>
+          <Typography variant="h6" sx={{ fontWeight: 1000, color: '#FFFFFF', fontSize: 15,justifyContent:'center'}}>
             Sitemark-web
           </Typography>
-          <Typography variant="body2" sx={{ fontSize: 10, marginLeft: '10px', color: 'gray' }}>
+          <Typography variant="body2" sx={{ fontSize: 10,fontWeight: 1000, marginLeft: '10px', color: 'gray' }}>
             Web app
           </Typography>
         </ListItemButton>
 
-        <Divider sx={{ backgroundColor: 'gray' }} />
+        <Divider sx={{ backgroundColor: '#212732', }} />
 
         {/* Menu Items */}
         <ListItemButton>
           <ListItemIcon>
-            <HomeIcon sx={{ color: '#FFFFFF', fontSize: 15 }} />
+            <HomeIcon sx={{ color: '#FFFFFF', fontSize: 20,marginLeft:4, }} />
           </ListItemIcon>
-          <ListItemText primary="Home" sx={{ color: '#FFFFFF', fontSize: 8}} />
+          <ListItemText primary="Home" sx={{ color: '#FFFFFF', fontSize: 8,fontWeight:600}} />
         </ListItemButton>
 
         <ListItemButton>
           <ListItemIcon>
-            <AnalyticsIcon sx={{ color: '#FFFFFF', fontSize: 20 }} />
+            <AnalyticsIcon sx={{ color: '#FFFFFF', fontSize: 20 ,marginLeft:4}} />
           </ListItemIcon>
           <ListItemText primary="Analytics" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
         <ListItemButton>
           <ListItemIcon>
-            <GroupIcon sx={{ color: '#FFFFFF', fontSize: 20 }} />
+            <GroupIcon sx={{ color: '#FFFFFF', fontSize: 20 ,marginLeft:4}} />
           </ListItemIcon>
           <ListItemText primary="Clients" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
         <ListItemButton>
           <ListItemIcon>
-            <TaskIcon sx={{ color: 'white', fontSize: 20 }} />
+            <TaskIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
           </ListItemIcon>
           <ListItemText primary="Tasks" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
@@ -85,21 +85,21 @@ const SideBar: React.FC = () => {
 
         <ListItemButton>
           <ListItemIcon>
-            <SettingsIcon sx={{ color: 'white', fontSize: 20 }} />
+            <SettingsIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
           </ListItemIcon>
           <ListItemText primary="Settings" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
         <ListItemButton>
           <ListItemIcon>
-            <InfoIcon sx={{ color: 'white', fontSize: 20 }} />
+            <InfoIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
           </ListItemIcon>
           <ListItemText primary="About" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
         <ListItemButton>
           <ListItemIcon>
-            <FeedbackIcon sx={{ color: 'white', fontSize: 20 }} />
+            <FeedbackIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
           </ListItemIcon>
           <ListItemText primary="Feedback" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
@@ -107,7 +107,7 @@ const SideBar: React.FC = () => {
         <Divider sx={{ my: 2 }} />
 
         {/* Plan section */}
-        <Box sx={{ padding: '16px', color: 'white' }}>
+        <Box sx={{ padding: '18px', color: 'white',  border: `1px solid #212732`,borderRadius:4 }}>
           <Typography variant="body2" color="gray" fontSize={10}>
             Plan about to expire
           </Typography>
