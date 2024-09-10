@@ -16,6 +16,7 @@ import { LinearProgress } from '@mui/material';
 import SessionsChart from './SessionsChart';
 import BarChar from './BarChar';
 import DatePicker from './DatePicker';
+import SearchBar from './SearchBar';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#05070A',
@@ -30,9 +31,10 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Dashboard: React.FC = () => {
   return (
-    <Box sx={{ flexGrow: 1, padding: { xs: 4, md: 4 }, backgroundColor: '#05070A', overflowX: 'hidden' }}>
+    <Box sx={{ flexGrow: 1, padding: { xs: 4, md: 2 }, backgroundColor: '#05070A', overflowX: 'hidden',  }}>
       <Typography variant="body1" color="#94a0b8">
         Dashboard {'>'} <Typography component="span" color="white">Home</Typography>
+        <SearchBar/>
       </Typography>
 
       <Typography variant="h6" gutterBottom color="#FFFFFF">

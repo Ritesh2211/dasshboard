@@ -22,8 +22,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <SearchBar/>
-      <div style={{ display: 'flex', minHeight: '100vh' }}>
+      <div style={{ display: 'flex', minHeight: '100vh',  }}>
         
         <SideBar />
         <Cards />
