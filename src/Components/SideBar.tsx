@@ -23,7 +23,6 @@ import FeedbackIcon from '@mui/icons-material/Feedback';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { Pix } from '@mui/icons-material';
 
 const drawerWidth = 210;
 
@@ -53,53 +52,172 @@ const SideBar: React.FC = () => {
         <Divider sx={{ backgroundColor: '#212732', }} />
 
         {/* Menu Items */}
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <HomeIcon sx={{ color: '#FFFFFF', fontSize: 20,marginLeft:4, }} />
+            <HomeIcon sx={{ color: '#FFFFFF', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
-          <ListItemText primary="Home" sx={{ color: '#FFFFFF', fontSize: 8,fontWeight:600}} />
+          <ListItemText primary="Home" sx={{ color: '#FFFFFF', fontSize: 8, fontWeight: 600 }} />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <AnalyticsIcon sx={{ color: '#FFFFFF', fontSize: 20 ,marginLeft:4}} />
+            <AnalyticsIcon sx={{ color: '#FFFFFF', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Analytics" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <GroupIcon sx={{ color: '#FFFFFF', fontSize: 20 ,marginLeft:4}} />
+            <GroupIcon sx={{ color: '#FFFFFF', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Clients" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <TaskIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
+            <TaskIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Tasks" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
         <Divider sx={{ my: 5 }} />
 
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <SettingsIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
+            <SettingsIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Settings" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <InfoIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
+            <InfoIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="About" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton>
+        <ListItemButton
+          className="value"
+          sx={{
+            '&:hover': { backgroundColor: '#21262C' },
+            '&:focus': { backgroundColor: '#1A1F24' },
+            '&:focus::before': {
+              content: '""',
+              position: 'absolute',
+              top: '5px',
+              left: '-10px',
+              width: '5px',
+              height: '80%',
+              backgroundColor: '#2F81F7',
+              borderRadius: '5px',
+              opacity: 1,
+            },
+          }}
+        >
           <ListItemIcon>
-            <FeedbackIcon sx={{ color: 'white', fontSize: 20 ,marginLeft:4}} />
+            <FeedbackIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Feedback" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
