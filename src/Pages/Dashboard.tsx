@@ -5,18 +5,17 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Tree from './Tree';
+import Tree from '../Components/Tree';
 import { BarChart } from '@mui/x-charts';
-import DetailsTable from './DetailsTable';
-import CountryCircle from './CountryCircle';
-import LineChart1 from './LineChart1';
-import LineChart2 from './LineChart2';
-import LineChart3 from './LineChart3';
+import DetailsTable from '../Components/DetailsTable';
+import CountryCircle from '../Components/CountryCircle';
+import LineChart1 from '../Components/LineChart1';
+import LineChart2 from '../Components/LineChart2';
+import LineChart3 from '../Components/LineChart3';
 import { LinearProgress } from '@mui/material';
-import SessionsChart from './SessionsChart';
-import BarChar from './BarChar';
-import DatePicker from './DatePicker';
-import SearchBar from './SearchBar';
+import SessionsChart from '../Components/SessionsChart';
+import BarChar from '../Components/BarChar';
+import SearchBar from '../Components/SearchBar';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#05070A',
@@ -47,7 +46,7 @@ const Dashboard: React.FC = () => {
           <Typography sx={{ fontSize: 25, fontWeight: 900, marginRight: 25, color: '#ffffff' }} variant="h4">14k</Typography>
           <Typography sx={{ color: '#94a0b8', marginRight: 22,fontWeight:800 }} variant="caption">Last 30 days</Typography>
           <Typography sx={{ textAlign: 'end' ,fontWeight:800}} variant="body2" color="success.main" mt={2}>+25%</Typography>
-          <LineChart1 />
+          <LineChart1  />
         </Item>
 
         <Item sx={{ flex: 1, minWidth: '220px' }}>
@@ -55,7 +54,7 @@ const Dashboard: React.FC = () => {
           <Typography sx={{ fontSize: 25, fontWeight: 900, textAlign: 'start', color: '#ffffff' }} variant="h4">325</Typography>
           <Typography sx={{ color: '#94a0b8', textAlign: 'start', marginRight: 22,fontWeight:800 }} variant="caption">Last 30 days</Typography>
           <Typography sx={{ textAlign: 'end',fontWeight:800 }} variant="body2" color="error.main" mt={2}>-25%</Typography>
-          <LineChart2 />
+          <LineChart2  />
         </Item>
 
         <Item sx={{ flex: 1, minWidth: '220px' }}>

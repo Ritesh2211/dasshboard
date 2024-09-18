@@ -10,9 +10,9 @@ import Box from '@mui/material/Box';
 export default function CustomizedInputBase() {
   return (
     <Box
-      sx={{
+      sx={{ 
         display: 'flex',
-        justifyContent: 'flex-end',  // Aligns to the right side
+        justifyContent: 'flex-end',  
         padding: 2,
         backgroundColor: '#05070A',
         width: '100%',
@@ -30,9 +30,9 @@ export default function CustomizedInputBase() {
           border: '1px solid #212732',
         }}
       >
-        <IconButton sx={{ p: '10px', color: 'white' }} aria-label="menu">
-          <MenuIcon />
-        </IconButton>
+        
+     
+     
         <InputBase
           sx={{ ml: 1, flex: 1, color: 'white' }}
           placeholder="Search"

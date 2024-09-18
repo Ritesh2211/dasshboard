@@ -3,7 +3,7 @@ import { DataGrid, GridColDef, GridRowsProp } from '@mui/x-data-grid';
 import { createTheme, Box } from '@mui/material';
 import { BarChart, barElementClasses } from '@mui/x-charts/BarChart';
 
-// columns for the DataGrid
+
 const columns: GridColDef[] = [
   { field: 'pageTitle', headerName: 'Page Title' },
   { field: 'status', headerName: 'Status' },
@@ -15,7 +15,7 @@ const columns: GridColDef[] = [
     field: 'dailyConversions',
     headerName: 'Daily Conversions',
     renderCell: (params) => {
-      const data = [params.value]; // Each row's data for the bar chart
+      const data = [params.value]; 
 
       return (
         <Box sx={{ width: '100%', height: 20, display: 'flex', alignItems: 'center' }}>
@@ -24,13 +24,13 @@ const columns: GridColDef[] = [
             height={20} // Height of the chart
             series={[
               {
-                data: data, // Value for the current row
+                data: data, 
               },
             ]}
             xAxis={[{ id: 'barCategories', data: [''], scaleType: 'band' }]}
             sx={{
               [`& .${barElementClasses.root}`]: {
-                fill: params.value > 5 ? '#1E90FF' : '#87CEFA',  // Conditional color
+                fill: params.value > 5 ? '#1E90FF' : '#87CEFA',
               },
             }}
           />
@@ -41,7 +41,7 @@ const columns: GridColDef[] = [
   },
 ];
 
-// sample data for the DataGrid
+
 const rows: GridRowsProp = [
   { id: 1, pageTitle: 'Homepage Overview', status: 'Online', users: 212423, eventCount: 8345, viewsPerUser: 18.5, averageTime: '2m 15s', dailyConversions: 5 },
   { id: 2, pageTitle: 'Product Page', status: 'Online', users: 52412, eventCount: 3455, viewsPerUser: 12.4, averageTime: '3m 10s', dailyConversions: 9 },
@@ -53,7 +53,6 @@ const rows: GridRowsProp = [
   { id: 8, pageTitle: 'Careers Page', status: 'Online', users: 23412, eventCount: 1134, viewsPerUser: 10.5, averageTime: '2m 5s', dailyConversions: 1 },
 ];
 
-// Create a dark theme using Material UI's theme system
 const darkTheme = createTheme({
   palette: {
     primary: {
@@ -75,7 +74,7 @@ const darkTheme = createTheme({
 
 const DetailsTable: React.FC = () => {
   const [paginationModel, setPaginationModel] = useState({
-    pageSize: 10, // page size smaller for responsive view
+    pageSize: 10, // page size smaller for responsive 
     page: 0,
   });
 

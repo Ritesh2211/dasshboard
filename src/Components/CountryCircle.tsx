@@ -54,15 +54,15 @@ const DoughnutChart = () => {
                   const data = chart.data;
                   if (data && data.labels) {
                     return data.labels.map((label, i) => ({
-                      text: label as string, // Cast label to string
+                      text: label as string, 
                       fillStyle: (data.datasets && data.datasets[0].backgroundColor && Array.isArray(data.datasets[0].backgroundColor))
                         ? data.datasets[0].backgroundColor[i] 
-                        : '#ffffff', // Default color if undefined
+                        : '#ffffff', 
                       index: i,
                       pointStyle: 'rectRounded',
                       fontColor: '#ffffff',
                       usePointStyle: true,
-                      icon: i === 0 ? indiaFlag : i === 1 ? usaFlag : othersFlag, // Use country flags
+                      icon: i === 0 ? indiaFlag : i === 1 ? usaFlag : othersFlag, 
                     }));
                   }
                   return [];

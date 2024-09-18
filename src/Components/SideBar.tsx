@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
-import {
-  Box,
-  Drawer,
-  List,
-  ListItemIcon,
-  ListItemText,
-  Divider,
-  Typography,
-  Avatar,
-  ListItemButton,
-  IconButton,
-  Toolbar,
-  AppBar,
-} from '@mui/material';
+import { Box, Drawer, List, ListItemIcon, ListItemText, Divider, Typography, Avatar, ListItemButton, IconButton, Toolbar, AppBar } from '@mui/material';
+import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import GroupIcon from '@mui/icons-material/Group';
@@ -41,107 +29,39 @@ const SideBar: React.FC = () => {
       <List>
         {/* Logo Section */}
         <ListItemButton>
-          <Typography variant="h6" sx={{ fontWeight: 1000, color: '#FFFFFF', fontSize: 15,justifyContent:'center'}}>
+          <Typography variant="h6" sx={{ fontWeight: 1000, color: '#FFFFFF', fontSize: 15, justifyContent: 'center' }}>
             Sitemark-web
           </Typography>
-          <Typography variant="body2" sx={{ fontSize: 10,fontWeight: 1000, marginLeft: '10px', color: 'gray' }}>
+          <Typography variant="body2" sx={{ fontSize: 10, fontWeight: 1000, marginLeft: '10px', color: 'gray' }}>
             Web app
           </Typography>
         </ListItemButton>
 
-        <Divider sx={{ backgroundColor: '#212732', }} />
+        <Divider sx={{ backgroundColor: '#212732' }} />
 
         {/* Menu Items */}
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/" sx={listItemStyles}>
           <ListItemIcon>
             <HomeIcon sx={{ color: '#FFFFFF', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
-          <ListItemText primary="Home" sx={{ color: '#FFFFFF', fontSize: 8, fontWeight: 600 }} />
+          <ListItemText primary="Home" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/analytics" sx={listItemStyles}>
           <ListItemIcon>
             <AnalyticsIcon sx={{ color: '#FFFFFF', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Analytics" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/clients" sx={listItemStyles}>
           <ListItemIcon>
             <GroupIcon sx={{ color: '#FFFFFF', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Clients" sx={{ color: '#FFFFFF', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/tasks" sx={listItemStyles}>
           <ListItemIcon>
             <TaskIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
@@ -150,72 +70,21 @@ const SideBar: React.FC = () => {
 
         <Divider sx={{ my: 5 }} />
 
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/settings" sx={listItemStyles}>
           <ListItemIcon>
             <SettingsIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="Settings" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/about" sx={listItemStyles}>
           <ListItemIcon>
             <InfoIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
           <ListItemText primary="About" sx={{ color: 'white', fontSize: 10 }} />
         </ListItemButton>
 
-        <ListItemButton
-          className="value"
-          sx={{
-            '&:hover': { backgroundColor: '#21262C' },
-            '&:focus': { backgroundColor: '#1A1F24' },
-            '&:focus::before': {
-              content: '""',
-              position: 'absolute',
-              top: '5px',
-              left: '-10px',
-              width: '5px',
-              height: '80%',
-              backgroundColor: '#2F81F7',
-              borderRadius: '5px',
-              opacity: 1,
-            },
-          }}
-        >
+        <ListItemButton component={Link} to="/feedback" sx={listItemStyles}>
           <ListItemIcon>
             <FeedbackIcon sx={{ color: 'white', fontSize: 20, marginLeft: 4 }} />
           </ListItemIcon>
@@ -225,7 +94,7 @@ const SideBar: React.FC = () => {
         <Divider sx={{ my: 2 }} />
 
         {/* Plan section */}
-        <Box sx={{ padding: '18px', color: 'white',  border: `1px solid #212732`,borderRadius:4 }}>
+        <Box sx={{ padding: '18px', color: 'white', border: `1px solid #212732`, borderRadius: 4 }}>
           <Typography variant="body2" color="gray" fontSize={10}>
             Plan about to expire
           </Typography>
@@ -263,7 +132,6 @@ const SideBar: React.FC = () => {
 
   return (
     <>
-      {/* AppBar for Menu Button on Mobile */}
       {(isMobile || isTablet) && (
         <AppBar position="fixed" sx={{ zIndex: theme.zIndex.drawer + 1, backgroundColor: '#1E1E2F' }}>
           <Toolbar>
@@ -295,7 +163,7 @@ const SideBar: React.FC = () => {
           open={mobileOpen || !isMobile}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'block' },
@@ -315,6 +183,22 @@ const SideBar: React.FC = () => {
       {(isMobile || isTablet) && <Toolbar />}
     </>
   );
+};
+
+const listItemStyles = {
+  '&:hover': { backgroundColor: '#21262C' },
+  '&:focus': { backgroundColor: '#1A1F24' },
+  '&:focus::before': {
+    content: '""',
+    position: 'absolute',
+    top: '5px',
+    left: '-10px',
+    width: '5px',
+    height: '80%',
+    backgroundColor: '#2F81F7',
+    borderRadius: '5px',
+    opacity: 1,
+  },
 };
 
 export default SideBar;

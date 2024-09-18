@@ -1,0 +1,99 @@
+{
+    "LineChart1": {
+      "data": [1, 4, 2, 5, 7, 2, 4, 6],
+      "xAxisData": [
+        "2022-06-01",
+        "2022-06-02",
+        "2022-06-05",
+        "2022-06-06",
+        "2022-06-07",
+        "2022-06-08",
+        "2022-06-11",
+        "2022-06-12"
+      ],
+      "height": 50,
+      "curve": "linear",
+      "plotType": "line",
+      "colors": ["green"],
+      "sx": {
+        "line": {
+          "strokeWidth": 2,
+          "stroke": "green",
+          "filter": "drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3))"
+        }
+      }
+    },
+    "LineChart2": {
+      "data": [3, 6, 1, 4, 9, 3, 5, 8],
+      "xAxisData": [
+        "2022-06-01",
+        "2022-06-02",
+        "2022-06-05",
+        "2022-06-06",
+        "2022-06-07",
+        "2022-06-08",
+        "2022-06-11",
+        "2022-06-12"
+      ],
+      "height": 50,
+      "curve": "linear",
+      "plotType": "line",
+      "colors": ["blue"],
+      "sx": {
+        "line": {
+          "strokeWidth": 2,
+          "stroke": "blue",
+          "filter": "drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3))"
+        }
+      }
+    },
+    "LineChart3": {
+      "data": [2, 8, 3, 6, 4, 9, 7, 5],
+      "xAxisData": [
+        "2022-06-01",
+        "2022-06-02",
+        "2022-06-05",
+        "2022-06-06",
+        "2022-06-07",
+        "2022-06-08",
+        "2022-06-11",
+        "2022-06-12"
+      ],
+      "height": 50,
+      "curve": "linear",
+      "plotType": "line",
+      "colors": ["red"],
+      "sx": {
+        "line": {
+          "strokeWidth": 2,
+          "stroke": "red",
+          "filter": "drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3))"
+        }
+      }
+
+    },
+      "tableData": {
+        "headers": ["Name", "Age", "Country"],
+        "rows": [
+          ["Alice", 30, "USA"],
+          ["Bob", 25, "Canada"],
+          ["Charlie", 35, "UK"]
+        ]
+      },
+      "treeData": {
+        "nodes": [
+          { "id": 1, "label": "Node 1", "children": [{ "id": 2, "label": "Child 1" }] },
+          { "id": 3, "label": "Node 2" }
+        ]
+      },
+      "countryCircleData": {
+        "countries": [
+          { "name": "India", "value": 70 },
+          { "name": "USA", "value": 50 },
+          { "name": "Others", "value": 30 }
+        ]
+      }
+    }
+    
+  
+  
